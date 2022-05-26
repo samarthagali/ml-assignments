@@ -21,8 +21,14 @@ s=input().split()
 print(s.reverse())
 
 #5
-s=input().split("#")
-print(s[2])
+import re
+data=" "+input("Enter sentence:")+" "
+pat=""+input("Enter pattern:")+"\w*"
+pat=re.compile(pat)
+res=re.findall(pat,data)
+for i in res:
+    print(i)
+res
 
 #6
 #append : Adds its argument as a single element to the end of a list. The length of the list increases by on
