@@ -40,3 +40,23 @@ l1=[1,2]
 l1.extend([3])
 print(l1)
 
+#7
+x=True
+y=True
+a=not (x or y)==not x and not y
+b=not(x and y)==not x or not y
+print(a,b)
+
+#8
+a,b,c,l,t1=[xfor x in range(1,100000000)],[].[],0,time.time()
+for i in a:
+    b.append(i*i)
+t1=time.time()-t1
+print("time for for loop:",t1*1000)
+t2=time.time()
+while l<len(a):
+    c.append(a[l]*a[l])
+    l+=1
+t2=time.time()-t2
+print("time for while loop is :",t2*1000)
+
