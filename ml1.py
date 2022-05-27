@@ -50,7 +50,7 @@ b=(not(x and y))==(not x or not y)
 print(a,b)
 
 #8
-a,b,c,l,t1=[xfor x in range(1,100000000)],[].[],0,time.time()
+a,b,c,l,t1=[x for x in range(1,100000000)],[].[],0,time.time()
 for i in a:
     b.append(i*i)
 t1=time.time()-t1
