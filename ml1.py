@@ -45,8 +45,8 @@ print(l1)
 #7
 x=True
 y=True
-a=not (x or y)==not x and not y
-b=not(x and y)==not x or not y
+a=(not (x or y))==(not x and not y)
+b=(not(x and y))==(not x or not y)
 print(a,b)
 
 #8
