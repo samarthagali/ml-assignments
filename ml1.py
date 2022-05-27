@@ -1,3 +1,5 @@
+import re
+import time
 #1
 s=input()
 print(s[::-1])
